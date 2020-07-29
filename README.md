@@ -1,5 +1,5 @@
 ### Date created
-This project and README file were both created on 29th July 2020
+Project and README file were created on: 2020-07-29
 
 ### Project Title
 BikeShare Python Project (Version Controlled)
@@ -19,5 +19,5 @@ This project makes use of the following files:
  * washington.csv
 
 ### Credits
-For this project I would like to thank my udacity mentors: Juno Lee for python,
-and Richard Kalehoff and Karl Krueger for all things Git.
+For this project I would like to thank my udacity mentors:
+Juno Lee for python, and Richard Kalehoff and Karl Krueger for all things Git.
