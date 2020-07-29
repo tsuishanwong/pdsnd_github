@@ -88,10 +88,8 @@ def time_stats(df):
     """
     Displays statistics on the most frequent times of travel.
 
-    Returns for the selected city, month and weekday:
-        The most popular month to travel
-        The most popular weekday to travel
-        The most popular hour to travel
+    Returns for the selected city, month and weekday the most popular month/weekday/hour to travel
+
     """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -219,21 +217,21 @@ def main():
                 break
 
         # Prints out the most popular travel times to the user if they select yes
-        time_stat_q = input('\nAre you interested in the most popular times of travel? Enter yes or no: ')
+        time_stat_q = input('\nAre you interested in the most popular times of travel? Please enter yes or no: ')
         if time_stat_q.lower() == 'yes':
             time_stats(df)
         else:
             print('Skipping time stats.')
 
         # Prints out the most popular stations to the user if they select yes
-        station_stat_q = input('\nWould you like to find out the most popular stations? Enter yes or no: ')
+        station_stat_q = input('\nWould you like to find out the most popular stations? Please enter yes or no: ')
         if station_stat_q.lower() == 'yes':
             station_stats(df)
         else:
             print('Skipping stations stats.')
 
         # Prints out the trip duration stats if user selects yes
-        trip_duration_stat_q = input('\nTrip duration stats are available, are you interested? Enter yes or no: ')
+        trip_duration_stat_q = input('\nTrip duration stats are available, are you interested? Please enter yes or no: ')
         if trip_duration_stat_q.lower() == 'yes':
             trip_duration_stats(df)
         else:
