@@ -152,14 +152,14 @@ def trip_duration_stats(df):
     hours = (total_time - days*days_in_seconds) // hours_in_seconds
     mins = (total_time - days*days_in_seconds - hours*hours_in_seconds) // mins_in_seconds
     secs = total_time - days*days_in_seconds - hours*hours_in_seconds - mins*mins_in_seconds
-    print("The sum of all trip durations is: {} days, {} hours, {} minutes, and {} seconds ({} seconds).".format(int(days),int(hours),int(mins),round(secs,2),total_time))
+    print("The sum of all trip durations is: {} days, {} hours, {} minutes, and {} seconds (Total {} seconds).".format(int(days),int(hours),int(mins),round(secs,2),total_time))
 
     # Calcaultes the average travel time
     mean_time = df['Trip Duration'].mean()
     mean_hours = mean_time // hours_in_seconds
     mean_mins = (mean_time - mean_hours*hours_in_seconds) // mins_in_seconds
     mean_secs = mean_time - mean_hours*hours_in_seconds - mean_mins*mins_in_seconds
-    print("The average trip duration per user is: {} hours, {} minutes, and {} seconds ({} seconds).".format(int(mean_hours),int(mean_mins),round(mean_secs,2),mean_time))
+    print("The average trip duration per user is: {} hours, {} minutes, and {} seconds ( Total {} seconds).".format(int(mean_hours),int(mean_mins),round(mean_secs,2),mean_time))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
