@@ -167,15 +167,15 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
+    print('\nA Breakdown of User information...\n')
     start_time = time.time()
 
     # Calculates counts of user types
-    print("User Type Count:")
+    print("Types of Users:")
     print(df['User Type'].value_counts().to_string())
 
     # Calculates counts of gender
-    print("\nGender Count:")
+    print("\nGender Split:")
     try:
         print(df['Gender'].value_counts().to_string())
     except KeyError:
