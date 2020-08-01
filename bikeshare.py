@@ -231,14 +231,14 @@ def main():
             print('Skipping stations stats.')
 
         # Prints out the trip duration stats if user selects yes
-        trip_duration_stat_q = input('\nTrip duration stats are available, are you interested? Please enter yes or no: ')
+        trip_duration_stat_q = input('\nTrip duration stats are also available, are you interested? Please enter yes or no: ')
         if trip_duration_stat_q.lower() == 'yes':
             trip_duration_stats(df)
         else:
             print('Skipping trip duration stats.')
 
         # Prints bikeshare user stats if user has typed in yes
-        user_stat_q = input('\nFind out more about the bikeshare users by selecting yes. If you would like to skip, type no: ')
+        user_stat_q = input('\nFind out more about the bikeshare users by typing "yes". If you would like to skip, type no: ')
         if user_stat_q.lower() == 'yes':
             user_stats(df)
         else:
